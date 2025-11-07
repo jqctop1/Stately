@@ -16,7 +16,7 @@
 plugins {
     id 'org.jetbrains.kotlin.multiplatform'
     id 'kmp-setup'
-    id 'com.vanniktech.maven.publish'
+    //id 'com.vanniktech.maven.publish'
 }
 
 group = GROUP
@@ -31,15 +31,17 @@ kotlin {
             }
         }
 
-        commonTest {
+        /*commonTest {
             dependencies {
                 implementation(kotlin("test"))
                 implementation libs.testHelp
             }
-        }
+        }*/
     }
 }
 
 configurations {
     compileClasspath
 }
+
+apply from: file("$rootDir/gradle/publish.gradle")

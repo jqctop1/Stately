@@ -8,7 +8,7 @@ touchlab-docusaurusosstemplate = "0.1.10"
 mavenPublish = "0.27.0"
 testHelp = "0.6.12"
 coroutines-test = "1.8.0"
-kotlin = "1.9.23"
+kotlin = "2.0.21-KBA-009"
 
 [libraries]
 

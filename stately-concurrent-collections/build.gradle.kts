@@ -4,7 +4,7 @@ import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 
 plugins {
     kotlin("multiplatform")
-    id("com.vanniktech.maven.publish")
+    //id("com.vanniktech.maven.publish")
     id("kmp-setup")
 }
 
@@ -19,10 +19,12 @@ kotlin {
         commonMain.dependencies {
             api(project(":stately-concurrency"))
         }
-        commonTest.dependencies {
+        /*commonTest.dependencies {
             implementation(kotlin("test"))
             implementation(libs.testHelp)
             implementation(libs.coroutines.test)
-        }
+        }*/
     }
 }
+
+apply("$rootDir/gradle/publish.gradle")

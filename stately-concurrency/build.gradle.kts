@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 
 plugins {
     kotlin("multiplatform")
-    id("com.vanniktech.maven.publish")
+    //id("com.vanniktech.maven.publish")
     id("kmp-setup")
 }
 
@@ -17,9 +17,11 @@ kotlin {
         commonMain.dependencies {
             implementation(project(":stately-strict"))
         }
-        commonTest.dependencies {
+        /*commonTest.dependencies {
             implementation(kotlin("test"))
             implementation(libs.testHelp)
-        }
+        }*/
     }
 }
+
+apply("$rootDir/gradle/publish.gradle")

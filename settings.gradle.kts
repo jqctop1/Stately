@@ -20,6 +20,7 @@ pluginManagement {
         google()
         gradlePluginPortal()
         mavenCentral()
+        maven("https://mirrors.tencent.com/nexus/repository/maven-public/")
     }
 }
 
@@ -28,5 +29,6 @@ dependencyResolutionManagement {
     repositories {
         mavenCentral()
         google()
+        maven("https://mirrors.tencent.com/nexus/repository/maven-public/")
     }
 }
